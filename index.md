@@ -61,7 +61,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   {% include dc/intro.html %}
 {% elsif page.carpentry == "lc" %}
   {% include lc/intro.html %}
-{% endif %}http://pad.software-carpentry.org/2018-04-03-Utrecht
+{% endif %}
 
 {% comment %}
   AUDIENCE
@@ -69,7 +69,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% if page.carpentry == "swc" %}
   {% include sc/who.html %}
 {% elsif page.carpentry == "dc" %}
-  {% include dc/who.html %}
+  This workshop is part of the Microbial Genomics (B-MCMIGE) course of the bioinformatics profile of the University of Utrecht.
 {% elsif page.carpentry == "lc" %}
   {% include lc/who.html %}
 {% endif %}
@@ -77,7 +77,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% comment %}
 
 
-This workshop is part of the Microbial Genomics (B-MCMIGE) course of the bioinformatics profile of the University of Utrecht
+
 
   LOCATION
 
@@ -208,13 +208,13 @@ This workshop is part of the Microbial Genomics (B-MCMIGE) course of the bioinfo
 {% if page.carpentry == "swc" %}
   {% include sc/schedule.html %}
 {% elsif page.carpentry == "dc" %}
-  {% include dc/schedule.html %}
+<a href="https://aschuerch.github.io/Microbial-Genomics-2018">Course Schedule</a>
 {% elsif page.carpentry == "lc" %}
   {% include lc/schedule.html %}
 {% endif %}
 
 {% comment %}
-<a href="https://aschuerch.github.io/Microbial-Genomics-2018">Course Schedule</a>
+
 
 
 
@@ -257,7 +257,7 @@ This workshop is part of the Microbial Genomics (B-MCMIGE) course of the bioinfo
 {% if page.carpentry == "swc" %}
   {% include sc/syllabus.html %}
 {% elsif page.carpentry == "dc" %}
-  {% include dc/syllabus.html %}
+<a href="https://aschuerch.github.io/Microbial-Genomics-2018">Course Syllabus</a>
 {% elsif page.carpentry == "lc" %}
   {% include lc/syllabus.html %}
 {% endif %}
