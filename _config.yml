@@ -3,13 +3,13 @@
 #------------------------------------------------------------
 
 # Which carpentry is this ("swc", "dc", or "lc")?
-carpentry: "swc"
+carpentry: "dc"
 
 # Overall title for pages.
-title: "Workshop Title"
+title: "Microbial Genomics course 2018"
 
 # Contact email address.
-email: lessons@software-carpentry.org
+email: a.c.schurch@umcutrecht.nl
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
