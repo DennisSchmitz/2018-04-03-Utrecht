@@ -28,30 +28,10 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
-{% comment %}
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
-
 <h2 id="general">General Information</h2>
 
 {% comment %}
   INTRODUCTION
-
   Edit the general explanatory paragraph below if you want to change
   the pitch.
 {% endcomment %}
@@ -63,13 +43,16 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   {% include lc/intro.html %}
 {% endif %}
 
+
+
+
 {% comment %}
   AUDIENCE
 {% endcomment %}
 {% if page.carpentry == "swc" %}
   {% include sc/who.html %}
 {% elsif page.carpentry == "dc" %}
-  This workshop is part of the Microbial Genomics (B-MCMIGE) course of the bioinformatics profile of the University of Utrecht.
+  {% include dc/who.html %}
 {% elsif page.carpentry == "lc" %}
   {% include lc/who.html %}
 {% endif %}
@@ -208,7 +191,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% if page.carpentry == "swc" %}
   {% include sc/schedule.html %}
 {% elsif page.carpentry == "dc" %}
-<a href="https://aschuerch.github.io/Microbial-Genomics-2018">Course Schedule</a>
+  {% include dc/schedule.html %}
 {% elsif page.carpentry == "lc" %}
   {% include lc/schedule.html %}
 {% endif %}
@@ -257,7 +240,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% if page.carpentry == "swc" %}
   {% include sc/syllabus.html %}
 {% elsif page.carpentry == "dc" %}
-<a href="https://aschuerch.github.io/Microbial-Genomics-2018">Course Syllabus</a>
+  {% include dc/syllabus.html %}
 {% elsif page.carpentry == "lc" %}
   {% include lc/syllabus.html %}
 {% endif %}
